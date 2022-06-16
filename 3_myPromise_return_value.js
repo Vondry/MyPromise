@@ -5,7 +5,7 @@ function myPromise(value) {
     }
 }
 
-const finalValue = myPromise(10)
+const finalValue = myPromise(10) // Promise.resolve(10)
     .then((value) => value * 2)
     .then((value) => value + 10)
     .then((value) => value - 5)

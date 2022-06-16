@@ -1,16 +1,12 @@
 const age = -1
 
-// Jake bude poradi vypisu z console.log?
-
-console.log("Start of script")
-
-// Jednoduchy promise - neni uzitecny
+// Jednoduchy promise - neni prilis uzitecny, ale jednoduchy
 Promise.resolve(age)
     .then((value) => value + 1)
     .then((value) => value + 1)
     .then((value) => console.log(value))
 
-// Slozitejsi promise - je uzitecny
+// Slozitejsi promise - je uzitecny, ale je trochu slozitejsi
 new Promise((resolve, reject) => {
         if (age > 0) resolve(1)
         else reject(`You put ${age}, but age must be > 0!`)
@@ -19,5 +15,3 @@ new Promise((resolve, reject) => {
     .then((value) => value + 1)
     .then((value) => console.log(value))
     .catch((value) => console.error("Error: " + value))
-
-console.log("End of script")

@@ -4,7 +4,7 @@ function myPromise(value) {
     }
 }
 
-myPromise(1)
+myPromise(1) // Promise.resolve(1)
     .then((value) => value + 1)
     .then((value) => value + 1)
     .then((value) => value + 1)
